@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "week2", "week2", "{629C7558
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W02.1.2O03", "week2\W02.1.2O03\W02.1.2O03.csproj", "{BFDAF397-F45E-4EFD-83A4-A68A765060C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W02.1.2O04", "week2\W02.1.2O04\W02.1.2O04.csproj", "{BC202C0A-EE4F-401E-BA59-A985CC9489AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{BFDAF397-F45E-4EFD-83A4-A68A765060C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFDAF397-F45E-4EFD-83A4-A68A765060C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFDAF397-F45E-4EFD-83A4-A68A765060C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC202C0A-EE4F-401E-BA59-A985CC9489AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC202C0A-EE4F-401E-BA59-A985CC9489AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC202C0A-EE4F-401E-BA59-A985CC9489AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC202C0A-EE4F-401E-BA59-A985CC9489AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BFDAF397-F45E-4EFD-83A4-A68A765060C5} = {629C7558-90D9-4BF0-862B-101BF413EB98}
+		{BC202C0A-EE4F-401E-BA59-A985CC9489AB} = {629C7558-90D9-4BF0-862B-101BF413EB98}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC029F9B-3C76-4028-83DA-96C8FF4D88B5}
