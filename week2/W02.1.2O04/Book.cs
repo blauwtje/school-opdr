@@ -7,8 +7,5 @@ class Book
         ID = id;
         Title = title;
     }
-    public static string Info()
-    {
-
-    }
+    public string Info() => $"ID: {ID}, Title: {Title}";
 }
