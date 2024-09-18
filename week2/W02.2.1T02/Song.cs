@@ -6,8 +6,6 @@ class Song
     {
         Title = title;
     }
-    public void SetSinger()
-    {
-
-    }
+    public void SetSinger(Artist singer) => Singer = singer;
+    public string Info() => $"{Title} is by {Singer.Name}";
 }
