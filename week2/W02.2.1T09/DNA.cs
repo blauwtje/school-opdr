@@ -4,10 +4,10 @@ class DNA
     //Fields, constructor and Replicate here
     public DNA? Ancestor;
     public string? Seq;
-    public DNA(DNA ancestor, string seq)
+    public DNA(DNA? ancestor, string seq)
     {
         Ancestor = ancestor;
-        Seq = seq;
+        Seq = seq.ToUpper();
 
     }
     private string MutateTransition()
@@ -29,7 +29,8 @@ class DNA
     };
     public DNA Replicate()
     {
-        this.Ancestor;
-        return MutateTransition();
+        DNA newDNA = new DNA(this, Seq);
+        newDNA.Seq = MutateTransition();
+        return newDNA;
     }
 }
