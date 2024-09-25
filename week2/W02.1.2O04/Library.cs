@@ -1,18 +1,18 @@
 class Library
 {
-    public int MaximumSize;
-    private List<Book> books;
-    public Library(int maximumsize)
+    public int MaxSize;
+    public List<Book> Books;
+    public Library(int maxsize)
     {
-        MaximumSize = maximumsize;
-        books = new List<Book>();
+        MaxSize = maxsize;
+        Books = new List<Book>();
     }
     public bool AddBook(int id, string title)
     {
-        if (books.Count < MaximumSize)
+        if (Books.Count < MaxSize)
         {
             Book newBook = new Book(id, title);
-            books.Add(newBook);
+            Books.Add(newBook);
             return true;
         }
         else
@@ -20,9 +20,36 @@ class Library
             return false;
         }
     }
-    public string FindBookByID()
+    public Book FindBookByID(int id)
     {
+        foreach (Book book in Books)
+        {
+            if (book.ID == id)
+            {
+                return book;
+            }
+        }
+        return null;
+    }
 
+    public void EditBookTitle(int id, string title)
+    {
+        Book book = FindBookByID(id);
+        if (book != null)
+        {
+            book.Title = title;
+        }
+    }
+    public void RemoveBookByTitle(string title)
+    {
+        for (int i = 0; i < Books.Count; i++)
+        {
+            if (Books[i].Title == title)
+            {
+                Books.RemoveAt(i);
+                i--;
+            }
+        }
     }
 
 }

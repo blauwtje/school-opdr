@@ -24,7 +24,7 @@
 
         foreach (var book in books)
         {
-            Console.WriteLine(Book.Info());
+            Console.WriteLine(book.Info());
         }
     }
 
