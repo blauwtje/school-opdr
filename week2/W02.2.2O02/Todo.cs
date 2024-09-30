@@ -5,7 +5,7 @@ class Todo
     {
         TaskList = new List<Task>();
     }
-    public void Task(string name)
+    public void AddTask(string name)
     {
         TaskList.Add(new Task(name));
     }
@@ -18,13 +18,15 @@ class Todo
                 return task;
             }
         }
-        return null;
+        return null!;
     }
     public string Report()
     {
+        string report = "";
         foreach (Task task in TaskList)
         {
-            Console.WriteLine(task);
+            report += task.Info() + "\n";
         }
+        return report;
     }
 }
