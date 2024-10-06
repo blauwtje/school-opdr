@@ -67,11 +67,11 @@ static class Program
         var teams = AssembleTeams2022();
 
         Season season2022 = new(2022, races, teams);
-        Season.RunSeason();
+        season2022.RunSeason();
 
         if (alsoPrintResults)
         {
-            Season.PrintSeasonResults();
+            season2022.PrintSeasonResults();
         }
     }
 
